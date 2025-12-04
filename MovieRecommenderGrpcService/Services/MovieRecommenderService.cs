@@ -27,7 +27,8 @@ namespace MovieRecommenderGrpcService.Services
             var reply = new RecommendationReply
             {
                 Score = score,
-                Recommended = score >= 3.5f
+                Recommended = score >= 3.5f,
+                Message = score >= 3.5f ? "MUST WATCH!" : "DON'T WATCH"
             };
             return Task.FromResult(reply);
         }

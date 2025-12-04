@@ -16,4 +16,5 @@ message RecommendationRequest {
 message RecommendationReply {
 	float score = 1;
 	bool recommended = 2;
+	string message = 3;
 }

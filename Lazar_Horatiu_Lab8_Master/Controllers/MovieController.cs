@@ -36,6 +36,7 @@ namespace Lazar_Horatiu_Lab8_Master.Controllers
             ViewBag.MovieId = movieId;
             ViewBag.Score = reply.Score;
             ViewBag.Recommended = reply.Recommended;
+            ViewBag.Message = reply.Message;
             return View();
         }
     }
